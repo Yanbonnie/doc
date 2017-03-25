@@ -611,15 +611,14 @@ HTML5？
 
 
 - 移动端的布局用过媒体查询吗？
-
-
+	@media only screen and (min-width:603px){}
 - 使用 CSS 预处理器吗？喜欢那个？
 
 		SASS (SASS、LESS没有本质区别，只因为团队前端都是用的SASS)
 
 
 - CSS优化、提高性能的方法有哪些？
-
+	1、可重用性  2、可扩展 3、可维护
 - 浏览器是怎样解析CSS选择器的？
 
 - 在网页中的应该使用奇数还是偶数的字体？为什么呢？
@@ -665,8 +664,8 @@ HTML5？
 
 - 设置元素浮动后，该元素的display值是多少？（自动变成display:block）
 
-- 怎么让Chrome支持小于12px 的文字？
-	.shrink{-webkit-transform:scale(0.8);-o-transform:scale(1); display:inline-block}
+- 怎么让Chrome支持小于12px 的文字？(12*0.75 = 9)
+	.shrink{-webkit-transform:scale(0.75);-o-transform:scale(1); display:inline-block;font-size:9px;}
 
 - 让页面里的字体变清晰，变细用CSS怎么做？（-webkit-font-smoothing: antialiased;）
 
