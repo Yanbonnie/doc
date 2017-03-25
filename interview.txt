@@ -391,11 +391,13 @@ HTML5？
 		}
 - HTML如何获取浏览器的宽度？
 		目前来讲html不具备获取浏览器宽度的能力。可以采用js的方式来获取，具体示例JS代码如下：
-		// 获取窗口宽度
-		if (window.innerWidth)
-		winWidth = window.innerWidth;
+		// 获取窗口宽度   
+		所有主流浏览器都支持 innerWidth 和 innerHeight 属性。
+		注意：IE 8 及更早 IE版本不支持这两个属性。
+		if (window.innerWidth)  //ie9以下不支持	
+			winWidth = window.innerWidth;
 		else if ((document.body) && (document.body.clientWidth))
-		winWidth = document.body.clientWidth;
+			winWidth = document.body.clientWidth;
 		// 获取窗口高度
 		if (window.innerHeight)
 		winHeight = window.innerHeight;
