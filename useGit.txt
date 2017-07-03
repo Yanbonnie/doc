@@ -89,3 +89,30 @@ git checkout -- <filename>
 假如你想丢弃你在本地的所有改动与提交，可以到服务器上获取最新的版本历史，并将你本地主分支指向它：
 git fetch origin
 git reset --hard origin/master
+
+/*花花*/
+cmsapp合并到master 
+
+git checkout master 
+git merge cmsapp
+
+【备注 提交后 git status 会出现几个提交要git push  直接git push就可以了】
+
+
+打标签 abc
+
+git tag -a abc -m "abc标签备注"
+
+推送tag到远程
+
+git push origin abc
+
+
+删除本地tag (abc)  
+git tag -d abc
+
+删除远程标签 abc
+git push origin :refs/tags/abc
+
+列出tag 
+git tag
