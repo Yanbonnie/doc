@@ -116,3 +116,8 @@ git push origin :refs/tags/abc
 
 列出tag 
 git tag
+
+
+/*bonnie*/
+git checkout . && git clean -xdf
+撤销修改git
